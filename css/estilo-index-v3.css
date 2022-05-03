@@ -21,7 +21,7 @@ header {
     }
 .menu {
     width: 100vw;
-    background-color: #dde3ca;
+    background-color: #3d3c3b;
     position: fixed;
     top: 0;
 }
@@ -37,11 +37,12 @@ header {
     display: block;
     padding: 10px;
     width: 120px;
-    text-align: center;   
+    text-align: center;
+    color: #dde3ca;   
 }
 .menu a:hover {
-    color: #dde3ca;
-    background-color: #3d3c3b;
+    color: #3d3c3b;
+    background-color: #dde3ca;
 }
 .resumo {
     background-color: #3d3c3b;
