@@ -1,0 +1,138 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    font-size: 62.5%;
+    background-color: #dde3ca;
+    overflow-x: hidden;              
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;    
+    }
+.menu {
+    width: 100vw;
+    background-color: #dde3ca;
+    position: fixed;
+    top: 0;
+}
+.menu ul {
+    display: flex;
+    font-size: 2em;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+               
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    width: 120px;
+    text-align: center;   
+}
+.menu a:hover {
+    color: #dde3ca;
+    background-color: #3d3c3b;
+}
+.resumo {
+    background-color: #3d3c3b;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #dde3ca;
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;    
+}
+.resumo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 80px;    
+}
+.resumo .site-title {
+    padding-bottom: 5px;
+}
+.resumo .site-subtitle {
+    padding-bottom: 20px;
+}
+.resumo p {
+    text-align: justify;    
+}
+.contato h2,
+.portfolio h2 {
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #3d3c3b;
+}
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.img-portfolio {
+    width: 300px;
+    height: 300px;
+    object-position: left bottom;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid figcaption {
+    font-size: 1.9em;
+    color: #3d3c3b;
+    text-align: center;
+}
+.contato {
+    background-color: #487aa1;
+}
+.contato h2 {
+    color: #dde3ca;
+}
+.contato .grid-icons {
+    display: grid;
+    grid-template-columns:  auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    column-gap: 6em;
+    row-gap: 3em;
+}
+.contato a {
+    font-size: 8em;
+    color:  #dde3ca;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #3d3c3b;
+}
+footer p {
+    color: #dde3ca;
+    font-size: 1.7em;
+    text-align: center;
+    
+       
+}
+@media (min-width: 768px) {
+    
+}
