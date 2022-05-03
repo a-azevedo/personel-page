@@ -1,4 +1,4 @@
-*, 
+*,
 *:after,
 *:before {
     margin: 0;
@@ -6,47 +6,55 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-body{
+
+body {
     font-size: 62.5%;
     background-color: #dde3ca;
-    overflow-x: hidden;              
+    overflow-x: hidden;
 }
+
 header {
     display: flex;
     flex-direction: column;
-    width: 100vw;    
-    }
+    width: 100vw;
+}
+
 .menu {
     width: 100vw;
     background-color: #3d3c3b;
     position: fixed;
     top: 0;
 }
+
 .menu ul {
     display: flex;
     font-size: 2em;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-               
+
 }
+
 .menu a {
     display: block;
     padding: 10px;
     width: 120px;
     text-align: center;
-    color: #dde3ca;   
+    color: #dde3ca;
 }
+
 .menu a:hover {
     color: #3d3c3b;
     background-color: #dde3ca;
 }
+
 .resumo {
     background-color: #3d3c3b;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,23 +63,30 @@ header {
     font-size: 2em;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 40px;    
+    padding-bottom: 40px;
+    align-items: center;
 }
+
 .resumo img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-top: 80px;    
+    margin-top: 80px;
 }
+
 .resumo .site-title {
     padding-bottom: 5px;
 }
+
 .resumo .site-subtitle {
     padding-bottom: 20px;
 }
+
 .resumo p {
-    text-align: justify;    
+    text-align: justify;
+    max-width: 768px;
 }
+
 .contato h2,
 .portfolio h2 {
     font-size: 3em;
@@ -80,6 +95,7 @@ header {
     text-align: center;
     color: #3d3c3b;
 }
+
 .portfolio .grid {
     display: grid;
     grid-template-columns: auto;
@@ -87,6 +103,7 @@ header {
     justify-content: center;
     padding-bottom: 20px;
 }
+
 .img-portfolio {
     width: 300px;
     height: 300px;
@@ -100,15 +117,18 @@ header {
     color: #3d3c3b;
     text-align: center;
 }
+
 .contato {
     background-color: #487aa1;
 }
+
 .contato h2 {
     color: #dde3ca;
 }
+
 .contato .grid-icons {
     display: grid;
-    grid-template-columns:  auto auto;
+    grid-template-columns: auto auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -116,10 +136,12 @@ header {
     column-gap: 6em;
     row-gap: 3em;
 }
+
 .contato a {
     font-size: 8em;
-    color:  #dde3ca;
+    color: #dde3ca;
 }
+
 footer {
     display: flex;
     justify-content: center;
@@ -127,13 +149,13 @@ footer {
     height: 50px;
     background-color: #3d3c3b;
 }
+
 footer p {
     color: #dde3ca;
     font-size: 1.7em;
     text-align: center;
-    
-       
+
+
 }
-@media (min-width: 768px) {
-    
-}
+
+@media (min-width: 768px) {}
