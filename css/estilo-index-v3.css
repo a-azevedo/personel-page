@@ -28,6 +28,7 @@ header {
     background-color: #3d3c3b;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -45,8 +46,10 @@ header {
     width: 120px;
     text-align: center;
     color: #dde3ca;
+    transition: background-color 0.5s, color 0.5s;    
 }
 
+.menu a:active,
 .menu a:hover {
     color: #3d3c3b;
     background-color: #dde3ca;
@@ -71,20 +74,37 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-top: 80px;
+    margin-top: 80px;    
 }
 
 .resumo .site-title {
     padding-bottom: 5px;
+    text-shadow: 0px 0px 10px black;
+    /* transform: scale(0.2) translate(50vh);
+    opacity: 0; */
+    animation: animationTitleSubtitle 2s linear forwards;    
 }
 
 .resumo .site-subtitle {
     padding-bottom: 20px;
+    text-shadow: 0px 0px 10px black;
+    animation: animationTitleSubtitle 2s linear forwards;
+}
+@keyframes animationTitleSubtitle {
+    from {
+        transform: scale(0.8) translate(0px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translate(0);
+        opacity: 1;
+    }
 }
 
 .resumo p {
     text-align: justify;
     max-width: 768px;
+    text-shadow: 0px 0px 1px black;
 }
 
 .contato h2,
@@ -140,6 +160,11 @@ header {
 .contato a {
     font-size: 8em;
     color: #dde3ca;
+    transition: text-shadow 0.5s;    
+}
+.contato a:active,
+.contato a:hover {
+    text-shadow: 0px 0px 10px #dde3ca;
 }
 
 footer {
